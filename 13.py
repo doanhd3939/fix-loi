@@ -494,7 +494,7 @@ def get_bypass_code(type_code):
                 'url': 'https://traffic-user.net/GET_MA.php?codexn=bomaydeptrai&url=https://vn88sv.com/cach-choi-bai-gao-gae&loai_traffic=https://vn88sv.com/&clk=1000',
                 'pattern': 'layma_me_vuatraffic'
             },
-            'bk8': {
+             'bk8': {
                 'url': 'https://traffic-user.net/GET_MA.php?codexn=taodeptrai&url=https://bk8ze.com/cach-choi-bai-catte&loai_traffic=https://bk8ze.com/&clk=1000',
                 'pattern': 'layma_me_vuatraffic'
             },
