@@ -1,0 +1,323 @@
+{% extends "base.html" %}
+
+{% block title %}YeuMoney Code Generator Pro - Trang chủ{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section bg-gradient text-white text-center py-5 mb-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">
+                    <i class="fas fa-rocket me-3"></i>
+                    YeuMoney Code Generator Pro
+                </h1>
+                <p class="lead mb-4">
+                    Công cụ tạo code chuyên nghiệp từ 13+ nguồn traffic hàng đầu với tốc độ nhanh chóng và độ chính xác cao.
+                </p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="{{ url_for('generator') }}" class="btn btn-warning btn-lg px-4">
+                        <i class="fas fa-magic me-2"></i>Tạo Code Ngay
+                    </a>
+                    <a href="https://t.me/YeuMoneyBot" target="_blank" class="btn btn-outline-light btn-lg px-4">
+                        <i class="fab fa-telegram me-2"></i>Telegram Bot
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image">
+                    <i class="fas fa-code display-1 text-warning opacity-75"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">
+            <i class="fas fa-star text-warning me-2"></i>
+            Tính Năng Nổi Bật
+        </h2>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-card card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-lightning-bolt fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="card-title">Tốc Độ Cao</h5>
+                        <p class="card-text">
+                            Xử lý và tạo code trong vòng 5-10 giây với hệ thống tối ưu hóa hiệu suất cao.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="feature-card card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-shield-alt fa-3x text-success"></i>
+                        </div>
+                        <h5 class="card-title">Bảo Mật Cao</h5>
+                        <p class="card-text">
+                            Hệ thống API key bảo mật với mã hóa và giới hạn truy cập để đảm bảo an toàn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="feature-card card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-chart-line fa-3x text-info"></i>
+                        </div>
+                        <h5 class="card-title">Thống Kê Chi Tiết</h5>
+                        <p class="card-text">
+                            Theo dõi usage, thống kê thành công và phân tích hiệu suất real-time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Traffic Sources Section -->
+<section class="traffic-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">
+            <i class="fas fa-globe text-info me-2"></i>
+            Nguồn Traffic Được Hỗ Trợ
+        </h2>
+        
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-circle text-primary me-2"></i>
+                            API MA (8 nguồn)
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="traffic-item p-3 bg-light rounded">
+                                    <strong>M88</strong><br>
+                                    <small class="text-muted">Cá cược thể thao</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="traffic-item p-3 bg-light rounded">
+                                    <strong>FB88</strong><br>
+                                    <small class="text-muted">Golf & Sports</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="traffic-item p-3 bg-light rounded">
+                                    <strong>188BET</strong><br>
+                                    <small class="text-muted">Casino Games</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="traffic-item p-3 bg-light rounded">
+                                    <strong>W88</strong><br>
+                                    <small class="text-muted">Poker Pro</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="traffic-item p-3 bg-light rounded">
+                                    <strong>V9BET</strong><br>
+                                    <small class="text-muted">Basketball</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="traffic-item p-3 bg-light rounded">
+                                    <strong>VN88</strong><br>
+                                    <small class="text-muted">Card Games</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="traffic-item p-3 bg-light rounded">
+                                    <strong>BK8</strong><br>
+                                    <small class="text-muted">Catte Online</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="traffic-item p-3 bg-light rounded">
+                                    <strong>W88XLM</strong><br>
+                                    <small class="text-muted">Solitaire</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-circle text-success me-2"></i>
+                            API MD (5 nguồn)
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="traffic-item p-3 bg-light rounded">
+                                    <strong>88BETAG</strong><br>
+                                    <small class="text-muted">Kèo châu Á</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="traffic-item p-3 bg-light rounded">
+                                    <strong>W88ABC</strong><br>
+                                    <small class="text-muted">Mobile Gaming</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="traffic-item p-3 bg-light rounded">
+                                    <strong>V9BETLG</strong><br>
+                                    <small class="text-muted">Flat Betting</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="traffic-item p-3 bg-light rounded">
+                                    <strong>BK8XO</strong><br>
+                                    <small class="text-muted">Lottery</small>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="traffic-item p-3 bg-light rounded text-center">
+                                    <strong>VN88IE</strong><br>
+                                    <small class="text-muted">Lottery System Pro</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Sẵn sàng bắt đầu?</h2>
+        <p class="lead mb-4">
+            Tham gia hàng nghìn người dùng đang sử dụng YeuMoney Code Generator Pro để tối ưu hóa traffic của họ.
+        </p>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="cta-buttons d-flex flex-wrap justify-content-center gap-3">
+                    <a href="{{ url_for('generator') }}" class="btn btn-primary btn-lg px-4">
+                        <i class="fas fa-magic me-2"></i>Bắt Đầu Tạo Code
+                    </a>
+                    <a href="{{ url_for('stats') }}" class="btn btn-outline-primary btn-lg px-4">
+                        <i class="fas fa-chart-bar me-2"></i>Xem Thống Kê
+                    </a>
+                    <a href="https://t.me/YeuMoneyBot" target="_blank" class="btn btn-success btn-lg px-4">
+                        <i class="fab fa-telegram me-2"></i>Dùng Bot
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Preview -->
+<section class="stats-preview py-5 bg-dark text-white">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md-3">
+                <div class="stat-item">
+                    <h3 class="display-6 fw-bold text-warning">13+</h3>
+                    <p class="mb-0">Nguồn Traffic</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-item">
+                    <h3 class="display-6 fw-bold text-success">99.9%</h3>
+                    <p class="mb-0">Uptime</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-item">
+                    <h3 class="display-6 fw-bold text-info">5s</h3>
+                    <p class="mb-0">Avg Response</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-item">
+                    <h3 class="display-6 fw-bold text-danger">24/7</h3>
+                    <p class="mb-0">Hỗ Trợ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Animate counter numbers
+    const counters = document.querySelectorAll('.display-6');
+    counters.forEach(counter => {
+        const target = counter.textContent;
+        counter.textContent = '0';
+        
+        const updateCounter = () => {
+            const current = +counter.textContent;
+            const targetNum = target.includes('%') ? parseFloat(target) : 
+                             target.includes('+') ? parseInt(target) :
+                             target.includes('s') ? parseInt(target) : 24;
+            
+            const increment = targetNum / 100;
+            
+            if (current < targetNum) {
+                counter.textContent = Math.ceil(current + increment) + (target.includes('%') ? '%' : 
+                                                                      target.includes('+') ? '+' :
+                                                                      target.includes('s') ? 's' : '');
+                setTimeout(updateCounter, 20);
+            } else {
+                counter.textContent = target;
+            }
+        };
+        
+        // Start animation when element is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    updateCounter();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+        
+        observer.observe(counter);
+    });
+    
+    // Add hover effects to feature cards
+    const featureCards = document.querySelectorAll('.feature-card');
+    featureCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+            this.style.transition = 'transform 0.3s ease';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+});
+</script>
+{% endblock %}

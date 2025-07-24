@@ -1,0 +1,115 @@
+# Configuration file for YeuMoney Pro
+# Copy this to config.json and fill in your values
+
+{
+  "app_config": {
+    "name": "YeuMoney Pro",
+    "version": "3.0.0",
+    "environment": "production",
+    "debug": false
+  },
+  "bot_config": {
+    "token": "YOUR_TELEGRAM_BOT_TOKEN_HERE",
+    "admin_users": [123456789],
+    "key_lifetime_hours": 24,
+    "max_keys_per_user": 1,
+    "rate_limit": {
+      "messages_per_minute": 20,
+      "commands_per_hour": 100
+    }
+  },
+  "web_config": {
+    "host": "127.0.0.1",
+    "port": 5000,
+    "secret_key": "your-secret-key-here-generate-new-one",
+    "admin_password": "change-this-password",
+    "rate_limit": {
+      "requests_per_minute": 60,
+      "requests_per_hour": 1000
+    }
+  },
+  "api_config": {
+    "base_url": "https://api.yeumoney.pro",
+    "request_timeout": 30,
+    "max_retries": 3,
+    "retry_delay": 1.0
+  },
+  "database_config": {
+    "url": "sqlite:///yeumoney.db",
+    "backup_enabled": true,
+    "backup_interval_hours": 24
+  },
+  "logging_config": {
+    "level": "INFO",
+    "file": "logs/yeumoney.log",
+    "max_size_mb": 10,
+    "backup_count": 5
+  },
+  "traffic_sources": {
+    "trafficforce": {
+      "name": "TrafficForce",
+      "api_type": "http",
+      "description": "Adult traffic platform with high-quality visitors"
+    },
+    "popunder": {
+      "name": "PopUnder",
+      "api_type": "http", 
+      "description": "Pop-under advertising network"
+    },
+    "propellerads": {
+      "name": "PropellerAds",
+      "api_type": "http",
+      "description": "Native and push notification ads"
+    },
+    "exoclick": {
+      "name": "ExoClick",
+      "api_type": "http",
+      "description": "Premium adult advertising network"
+    },
+    "juicyads": {
+      "name": "JuicyAds",
+      "api_type": "http",
+      "description": "Adult ad network with high payouts"
+    },
+    "eroadvertising": {
+      "name": "EroAdvertising",
+      "api_type": "http",
+      "description": "Adult content advertising platform"
+    },
+    "trafficstars": {
+      "name": "TrafficStars",
+      "api_type": "http",
+      "description": "Adult traffic network with premium inventory"
+    },
+    "clickdealer": {
+      "name": "ClickDealer",
+      "api_type": "http",
+      "description": "Performance marketing platform"
+    },
+    "adcash": {
+      "name": "AdCash",
+      "api_type": "http",
+      "description": "Display advertising network"
+    },
+    "bidvertiser": {
+      "name": "BidVertiser",
+      "api_type": "http",
+      "description": "PPC advertising platform"
+    },
+    "popads": {
+      "name": "PopAds",
+      "api_type": "http",
+      "description": "Pop advertising network"
+    },
+    "admaven": {
+      "name": "AdMaven",
+      "api_type": "http",
+      "description": "Pop and push advertising network"
+    },
+    "hilltopads": {
+      "name": "HilltopAds",
+      "api_type": "http",
+      "description": "Multiple ad formats network"
+    }
+  }
+}
